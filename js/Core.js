@@ -29,13 +29,16 @@ class Core {
 		if (!this.gameCondition.isActive) {
 			return;
 		}
-		
+
 		moveAliens();
 		moveCannon();
 		moveBullets();
 
 		interactWithCannon();
 		interactWithAliens();
+
+		shootCannon();
+		shootAlien();
 	}
 
 	//TODO: Двигаем пришельцев, в gameCondition есть их направление движения, доходим до края -> меняем направление, двигаем вниз
@@ -51,6 +54,16 @@ class Core {
 
 	//TODO: Двигаем пули в зависимости от направления (Directions.). Доходим до края карты, удаляем (removeBullets([bullet]))
 	moveBullets() {
+
+	}
+
+	//TODO: Если нажата нужная клавиша, то создаём снаряд и направляем в сторону пришельцев
+	shootCannon() {
+
+	}
+
+	//TODO: Если подошёл таймер, то стреляем из случайного пришельца
+	shootAlien() {
 
 	}
 
